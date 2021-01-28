@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk update &&  apk add git make pkgconfig bison flex libtool autoconf automake g++ libzip-dev bzip2-dev curl-dev xz && \
+RUN apk update &&  apk add git make pkgconfig bison flex libtool autoconf automake g++ libzip-dev bzip2-dev curl-dev xz jq && \
     git clone https://github.com/phaag/nfdump.git && \
     cd nfdump && \
     ./autogen.sh  && \
